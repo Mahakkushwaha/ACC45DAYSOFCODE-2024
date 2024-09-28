@@ -1,1 +1,16 @@
-
+import java.util.*;
+class asd{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int X=sc.nextInt();
+        if(X>=1 &&  X<=20)
+        {
+            if(X>=12){
+                System.out.println("yes");
+            }
+            else{
+                System.out.println("No");
+            }
+        }
+    }
+}
