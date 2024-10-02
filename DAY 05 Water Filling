@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        
+        for (int i = 0; i < T; i++) {
+            int B1 = sc.nextInt();
+            int B2 = sc.nextInt();
+            int B3 = sc.nextInt();
+            
+            // Count the number of empty bottles
+            int emptyCount = 0;
+            if (B1 == 0) emptyCount++;
+            if (B2 == 0) emptyCount++;
+            if (B3 == 0) emptyCount++;
+            
+            // Check if at least two bottles are empty
+            if (emptyCount >= 2) {
+                System.out.println("Water filling time");
+            } else {
+                System.out.println("Not now");
+            }
+        }
+    }
+}
