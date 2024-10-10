@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+    public static void main(String[] args) throws java.lang.Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int T = Integer.parseInt(reader.readLine());  // Read the number of test cases
+        
+        for (int i = 0; i < T; i++) {
+            String[] input = reader.readLine().split(" ");
+            int X = Integer.parseInt(input[0]);  // The number of problems submitted
+            int Y = Integer.parseInt(input[1]);  // The number of problems approved
+            
+            // Check if Munchy is an expert
+            if (2 * Y >= X) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
+    }
+}
