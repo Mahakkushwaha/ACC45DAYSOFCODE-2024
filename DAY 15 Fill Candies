@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+    public static void main (String[] args) throws java.lang.Exception {
+        Scanner sc = new Scanner(System.in);
+        
+        int T = sc.nextInt(); // Read the number of test cases
+        while (T-- > 0) {
+            int N = sc.nextInt(); // Number of candies
+            int K = sc.nextInt(); // Number of pockets per bag
+            int M = sc.nextInt(); // Maximum candies per pocket
+
+            // Calculate the maximum candies one bag can hold
+            int maxCandiesPerBag = K * M;
+            
+            // Calculate the minimum number of bags required
+            int bagsNeeded = (N + maxCandiesPerBag - 1) / maxCandiesPerBag;
+            
+            // Print the result for this test case
+            System.out.println(bagsNeeded);
+        }
+        
+        sc.close();
+    }
+}
