@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+    public static void main (String[] args) throws java.lang.Exception {
+        Scanner scanner = new Scanner(System.in);
+        int T = scanner.nextInt();  // Read number of test cases
+        
+        while (T-- > 0) {
+            int N = scanner.nextInt();  // Read number of problems
+            int start38Count = 0;
+            int ltime108Count = 0;
+
+            for (int i = 0; i < N; i++) {
+                String contestCode = scanner.next();  // Read each contest code
+
+                if (contestCode.equals("START38")) {
+                    start38Count++;
+                } else if (contestCode.equals("LTIME108")) {
+                    ltime108Count++;
+                }
+            }
+
+            System.out.println(start38Count + " " + ltime108Count);
+        }
+        scanner.close();
+    }
+}
