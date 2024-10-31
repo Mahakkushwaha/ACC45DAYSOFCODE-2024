@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        Scanner scanner = new Scanner(System.in);
+        int T = scanner.nextInt();
+        
+        for (int i = 0; i < T; i++) {
+            int P = scanner.nextInt();
+            int Q = scanner.nextInt();
+            int totalPoints = P + Q;
+            int turn = (totalPoints / 2) % 2;
+            
+            if (turn == 0) {
+                System.out.println("Alice");
+            } else {
+                System.out.println("Bob");
+            }
+        }
+        
+        scanner.close();
+    }
+}
