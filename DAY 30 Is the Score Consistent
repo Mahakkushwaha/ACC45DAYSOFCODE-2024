@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Read the number of test cases
+        int T = scanner.nextInt();
+        
+        while (T-- > 0) {
+            // Read the current score A:B
+            int A = scanner.nextInt();
+            int B = scanner.nextInt();
+            
+            // Read the desired score C:D
+            int C = scanner.nextInt();
+            int D = scanner.nextInt();
+            
+            // Check if it's possible to reach the score C:D
+            if (A <= C && B <= D) {
+                System.out.println("POSSIBLE");
+            } else {
+                System.out.println("IMPOSSIBLE");
+            }
+        }
+        
+        scanner.close();
+    }
+}
