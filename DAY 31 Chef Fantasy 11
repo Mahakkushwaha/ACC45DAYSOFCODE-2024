@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        Scanner scanner = new Scanner(System.in);
+        // Read the number of test cases
+        int T = scanner.nextInt();
+        
+        // Iterate over each test case
+        for (int i = 0; i < T; i++) {
+            // Read the number of players Chef is considering
+            int N = scanner.nextInt();
+            
+            // Calculate the number of choices for captain and vice-captain
+            int choices = N * (N - 1);
+            
+            // Print the result for the current test case
+            System.out.println(choices);
+        }
+        scanner.close();
+    }
+}
