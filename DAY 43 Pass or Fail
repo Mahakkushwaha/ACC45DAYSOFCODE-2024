@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        Scanner scanner = new Scanner(System.in);
+        
+        int T = scanner.nextInt();
+        while (T-- > 0) {
+            int N = scanner.nextInt(); 
+            int X = scanner.nextInt(); 
+            int P = scanner.nextInt(); 
+
+            int score = 3 * X - (N - X);
+            if (score >= P) {
+                System.out.println("PASS");
+            } else {
+                System.out.println("FAIL");
+            }
+        }
+        
+        scanner.close();
+    }
+}
